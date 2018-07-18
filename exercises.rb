@@ -112,6 +112,30 @@ country_island = [
   {country: "Australia", continent: "Australia", island: true},
   {country: "England", continent: "Europe", island: false}
 ]
-
-
 puts country_island
+
+
+#exercise7
+20.times do
+  puts "I will not skateboard in the halls"
+end
+repeat_msg = Array.new(20, "I will not skateboard in the halls")
+puts repeat_msg
+array_num = Array(1..50)
+counter = 0
+array_num.each do |x|
+  counter += x
+end
+puts counter
+array_repeat = []
+array_num.each do |x|
+  3.times {array_repeat.push(x)}
+end
+puts array_repeat
+not_island = []
+country_island.each do |x|
+  if x[:island] == false
+    not_island.push(x[:country])
+  end
+end
+puts not_island
