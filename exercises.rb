@@ -139,3 +139,17 @@ country_island.each do |x|
   end
 end
 puts not_island
+
+#exercise8
+expense1 = [140, 25, 5, 300]
+def total_expenses(expenses)
+  sum_total = 0
+  expenses.each do |x|
+    sum_total += x
+  end
+  return sum_total
+end
+total_expenses1 = total_expenses(expense1)
+puts "The total is #{total_expenses1}"
+total_expenses2 = total_expenses([100, 500, 24, 49])
+puts "The second total is #{total_expenses2}"
