@@ -97,3 +97,21 @@ family_age.map do |age|
 end
 fav_colours.push("green", "grey")
 puts fav_colours
+
+#exercise6
+movie_list = {
+  1999 => ['The Matrix', 'Star Wars: Episode 1', 'The Mummy'],
+  2009 => ['Avatar', 'Star Trek', 'District 9'],
+  2019 => ['How to Train Your Dragon 3', 'Toy Story 4', 'Star Wars: Episode 9']
+}
+puts movie_list
+phone_rows = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ['*', 0, '#']]
+puts phone_rows
+country_island = [
+  {country: "Canada", continent: "North America", island: false},
+  {country: "Australia", continent: "Australia", island: true},
+  {country: "England", continent: "Europe", island: false}
+]
+
+
+puts country_island
