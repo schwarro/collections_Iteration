@@ -61,3 +61,18 @@ fav_movies[:"Beauty and the Beast"] = {year1: 1991, year2: 2017}
 fav_movies[:"Beauty and the Beast"].each do |key, value|
   puts "Beauty and the beast came out in #{value}"
 end
+
+#exercise4
+family_age.each do |x|
+  if x <= 29
+    puts x
+  end
+end
+max_age = family_age.max
+puts "The oldest person is #{max_age}"
+heads = coin_flip.count("heads")
+puts "Heads came up #{heads} times."
+fav_artists.delete_at(0)
+puts fav_artists
+cities["Toronto"] = "3 Million"
+puts cities
