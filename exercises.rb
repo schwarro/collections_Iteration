@@ -19,9 +19,9 @@ fav_movies= {
 }
 
 cities= {
-  "Toronto" => "2.81 Million",
-  "Montreal" => "1.74 Million",
-  "Vancouver" => "0.65 Million"
+  "Toronto" => 2810000,
+  "Montreal" => 1741000,
+  "Vancouver" => 647540
 }
 
 ages= {
@@ -40,7 +40,7 @@ puts fav_movies["The Avengers"]
 
 #exercise2
 puts fav_colours[-1]
-cities[:Ottawa] = "0.93 Million"
+cities[:Ottawa] = 947031
 coin_flip = coin_flip.reverse
 puts coin_flip
 cities.each do |city, pop|
@@ -74,5 +74,26 @@ heads = coin_flip.count("heads")
 puts "Heads came up #{heads} times."
 fav_artists.delete_at(0)
 puts fav_artists
-cities["Toronto"] = "3 Million"
+cities["Toronto"] = 3000000
 puts cities
+
+#exercise5
+city_counter = 0
+cities.each do |keys, values|
+  city_counter += values
+end
+puts "The total population for these cities is #{city_counter}"
+ages.each do |keys, values|
+  if values > 27
+    puts "#{keys.capitalize} is old."
+  else
+    puts "#{keys.capitalize} is young"
+  end
+end
+puts fav_colours.last(2)
+family_age.map do |age|
+  age += 1
+  puts age
+end
+fav_colours.push("green", "grey")
+puts fav_colours
