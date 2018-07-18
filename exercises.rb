@@ -49,3 +49,15 @@ end
 fav_artists.each do |artist|
   puts "I think #{artist} is great!"
 end
+
+#exercise3
+puts fav_artists[0..1]
+fav_movies.each do |movie, year|
+  puts "#{movie} came out in #{year}"
+end
+family_age = family_age.reverse
+puts family_age
+fav_movies[:"Beauty and the Beast"] = {year1: 1991, year2: 2017}
+fav_movies[:"Beauty and the Beast"].each do |key, value|
+  puts "Beauty and the beast came out in #{value}"
+end
