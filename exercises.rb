@@ -13,19 +13,27 @@ definitions= {
 }
 
 fav_movies= {
-  :"The Social Network" => "2010",
-  :"V for Vendetta" => "2006",
-  :"The Avengers" => "2012"
+  "The Social Network" => "2010",
+  "V for Vendetta" => "2006",
+  "The Avengers" => "2012"
 }
 
 cities= {
-  :"Toronto" => "2.81 Million",
-  :"Montreal" => "1.74 Million",
-  :"Vancouver" => "0.65 Million"
+  "Toronto" => "2.81 Million",
+  "Montreal" => "1.74 Million",
+  "Vancouver" => "0.65 Million"
 }
 
 ages= {
-  :"David" => 28,
-  :"Matthew" => 23,
-  :"Amanda" => 28
+  "David" => 28,
+  "Matthew" => 23,
+  "Amanda" => 28
 }
+
+#exercise1
+puts coin_flip
+puts fav_colours[0]
+puts family_age.sort
+family_age.push(0)
+puts family_age
+puts fav_movies["The Avengers"]
