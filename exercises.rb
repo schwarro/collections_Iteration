@@ -149,7 +149,38 @@ def total_expenses(expenses)
   end
   return sum_total
 end
+
 total_expenses1 = total_expenses(expense1)
 puts "The total is #{total_expenses1}"
 total_expenses2 = total_expenses([100, 500, 24, 49])
 puts "The second total is #{total_expenses2}"
+
+
+#exercise9
+grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+
+def output_groceries(array)
+  array.each do |x|
+    puts "* #{x}"
+  end
+end
+
+grocery_list.push("rice")
+output_groceries(grocery_list)
+
+list_items = grocery_list.length
+puts "You have #{list_items} items on your list"
+
+if grocery_list.include?("bananas") == true
+  puts "Bananas are on your list"
+else grocery_list.include?("bananas") == false
+  puts "Bananas aren't on your list, you should pick some up"
+end
+
+puts "The second item on your list is #{grocery_list[1]}"
+
+alpha_list = grocery_list.sort
+puts alpha_list
+
+grocery_list.delete("salmon")
+puts grocery_list
